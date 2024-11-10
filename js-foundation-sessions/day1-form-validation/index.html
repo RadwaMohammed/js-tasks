@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 1 | Form validation</title>
+  <style>
+    em {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <form id="form">
+    <div>
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" placeholder="Enter username" minlength="4" required>
+      <br><small>Username must be at least 4 characters long.</small>
+      <br><em></em>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Enter your password"  minlength="8" required>
+      <br><small>Password must be at least 8 characters long.</small>
+      <br><em></em>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="user@example.com" required>
+      <br><em></em>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
